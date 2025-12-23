@@ -1,0 +1,57 @@
+[
+  {
+    "id": "p1",
+    "name": "Facial Wash - Gentle Clean",
+    "short": "Pembersih lembut, cocok untuk semua jenis kulit.",
+    "long": "Pembersih wajah dengan ekstrak aloe vera dan chamomile yang membersihkan tanpa membuat kulit kering.",
+    "price": 45000,
+    "image": "https://via.placeholder.com/400x300.png?text=Facial+Wash",
+    "category": "Pembersih",
+    "bestseller": true,
+    "promo": false
+  },
+  {
+    "id": "p2",
+    "name": "Serum Vitamin C",
+    "short": "Mencerahkan & melindungi kulit dari radikal bebas.",
+    "long": "Serum konsentrasi vitamin C stabil untuk membantu mengurangi noda hitam dan memberikan kilau alami.",
+    "price": 95000,
+    "image": "https://via.placeholder.com/400x300.png?text=Serum+Vitamin+C",
+    "category": "Serum",
+    "bestseller": true,
+    "promo": true
+  },
+  {
+    "id": "p3",
+    "name": "Moisturizer - Hydrating Cream",
+    "short": "Melembapkan tanpa meninggalkan rasa berminyak.",
+    "long": "Krim pelembap ringan dengan hyaluronic acid untuk hidrasi sepanjang hari.",
+    "price": 85000,
+    "image": "https://via.placeholder.com/400x300.png?text=Moisturizer",
+    "category": "Pelembap",
+    "bestseller": false,
+    "promo": false
+  },
+  {
+    "id": "p4",
+    "name": "Sunscreen SPF 30",
+    "short": "Perlindungan harian terhadap sinar UV.",
+    "long": "Sunscreen broad-spectrum SPF 30, cepat meresap dan cocok digunakan sebelum beraktivitas di luar ruangan.",
+    "price": 65000,
+    "image": "https://via.placeholder.com/400x300.png?text=Sunscreen+SPF30",
+    "category": "Perlindungan",
+    "bestseller": false,
+    "promo": true
+  },
+  {
+    "id": "p5",
+    "name": "Toner - Refreshing",
+    "short": "Mengecilkan pori & menyeimbangkan pH kulit.",
+    "long": "Toner berbahan witch hazel dan hyaluronic acid untuk menyegarkan kulit setelah pembersihan.",
+    "price": 40000,
+    "image": "https://via.placeholder.com/400x300.png?text=Toner",
+    "category": "Toner",
+    "bestseller": false,
+    "promo": false
+  }
+]

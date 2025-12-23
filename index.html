@@ -1,0 +1,149 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Nasa Skincare — Beranda</title>
+  <meta name="description" content="Nasa Skincare — produk perawatan kulit alami dan terjangkau." />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body data-page="home">
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="#home">
+        <div class="logo">
+          <img src="" alt="" aria-hidden="true" />
+        </div>
+        <div>
+          <h1>Nasa Skincare</h1>
+          <p class="tag">Perawatan kulit alami & terpercaya</p>
+        </div>
+      </a>
+
+      <nav class="nav">
+        <button id="nav-toggle" class="nav-toggle" aria-label="Menu">☰</button>
+        <ul class="nav-list" id="main-nav">
+          <li><a href="#home" class="nav-link">Beranda</a></li>
+          <li><a href="#kategori" class="nav-link">Kategori</a></li>
+          <li><a href="#semua-produk" class="nav-link">Produk</a></li>
+          <li><a href="#bestseller" class="nav-link">BestSeler</a></li>
+          <li><a href="#promo" class="nav-link">Promo</a></li>
+          <li><a href="#checkout" class="nav-link">Checkout (<span id="cart-count">0</span>)</a></li>
+          <li><a href="#kontak" class="nav-link">Kontak</a></li>
+          <li><a href="admin.html" class="nav-link">Admin</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container" id="home">
+    <!-- Hero -->
+    <section class="hero" id="hero">
+      <div class="hero-inner">
+        <h2>Selamat datang di Nasa Skincare</h2>
+        <p class="lead">Produk perawatan kulit berbahan alami, lembut, dan terjangkau. Diformulasi untuk semua jenis kulit.</p>
+        <div class="hero-ctas">
+          <a href="#semua-produk" class="btn primary">Belanja Sekarang</a>
+          <a href="#promo" class="btn">Lihat Promo</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Kategori -->
+    <section id="kategori" class="mt-2">
+      <h3>Kategori</h3>
+      <div id="categories" class="categories-grid">
+        <!-- Diisi oleh script.js -->
+      </div>
+    </section>
+
+    <!-- Semua Produk (dengan search & sort) -->
+    <section id="semua-produk" class="mt-2">
+      <div class="section-header">
+        <h3>Semua Produk</h3>
+        <div class="controls">
+          <input id="search-input" type="search" placeholder="Cari produk, mis. serum, wajah..." />
+          <select id="sort-select" aria-label="Urutkan">
+            <option value="default">Urutkan: Terbaru</option>
+            <option value="price-asc">Harga: Low → High</option>
+            <option value="price-desc">Harga: High → Low</option>
+            <option value="name-asc">Nama: A → Z</option>
+          </select>
+        </div>
+      </div>
+
+      <div id="products-all" class="products-grid"></div>
+      <div id="no-results" class="muted hidden">Tidak ada hasil. Coba kata kunci lain.</div>
+    </section>
+
+    <!-- BestSeler -->
+    <section id="bestseller" class="mt-2">
+      <div class="section-header">
+        <h3>BestSeler</h3>
+        <small class="muted">Produk favorit pelanggan</small>
+      </div>
+      <div id="products-bestseller" class="products-grid"></div>
+    </section>
+
+    <!-- Promo -->
+    <section id="promo" class="mt-2">
+      <div class="section-header">
+        <h3>Promo</h3>
+        <small class="muted">Diskon & paket spesial</small>
+      </div>
+      <div id="products-promo" class="products-grid"></div>
+    </section>
+
+    <!-- Checkout (ringkasan mini di halaman utama) -->
+    <section id="checkout" class="mt-2">
+      <h3>Keranjang & Checkout</h3>
+      <div id="checkout-mini">
+        <!-- Ringkasan keranjang mini dirender oleh script.js -->
+      </div>
+      <div style="margin-top:8px;">
+        <a href="checkout.html" class="btn">Buka Halaman Checkout Lengkap</a>
+      </div>
+    </section>
+
+    <!-- Kontak -->
+    <section id="kontak" class="mt-2">
+      <h3>Kontak</h3>
+      <div style="display:flex;gap:16px;flex-wrap:wrap">
+        <form id="contact-form" class="contact-form" style="flex:1;min-width:260px">
+          <label>Nama<input type="text" name="name" required></label>
+          <label>Email<input type="email" name="email" required></label>
+          <label>Pesan<textarea name="message" rows="4" required></textarea></label>
+          <div class="form-actions">
+            <button class="btn primary" type="submit">Kirim Pesan</button>
+          </div>
+        </form>
+
+        <div style="flex:1;min-width:260px">
+          <h4>Info Toko</h4>
+          <p>Email: <a href="mailto:info@nasaskincare.example">info@nasaskincare.example</a></p>
+          <p>Alamat: Contoh Jalan No.1, Kota</p>
+          <p>Jam Operasional: Senin - Jumat, 09:00 - 17:00</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; <span id="year"></span> Nasa Skincare — Semua hak dilindungi.</p>
+    </div>
+  </footer>
+
+  <!-- Product Detail Modal -->
+  <div id="prod-modal" class="modal hidden" aria-hidden="true">
+    <div class="modal-content prod-modal-content" role="dialog" aria-modal="true">
+      <button id="close-prod-modal" class="modal-close" aria-label="Tutup">×</button>
+      <div id="prod-modal-body"></div>
+    </div>
+  </div>
+
+  <div id="toast" class="toast hidden"></div>
+
+  <script src="script.js" defer></script>
+</body>
+</html>

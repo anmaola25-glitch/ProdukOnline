@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Nasa Skincare — Checkout</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body data-page="checkout">
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html"><h1>Nasa Skincare</h1></a>
+      <nav class="nav">
+        <button id="nav-toggle" class="nav-toggle" aria-label="Menu">☰</button>
+        <ul class="nav-list" id="main-nav">
+          <li><a href="index.html" class="nav-link">Beranda</a></li>
+          <li><a href="kategori.html" class="nav-link">Kategori</a></li>
+          <li><a href="bestseller.html" class="nav-link">BestSeler</a></li>
+          <li><a href="promo.html" class="nav-link">Promo</a></li>
+          <li><a href="kontak.html" class="nav-link">Kontak</a></li>
+          <li><a href="checkout.html" class="nav-link">Checkout (<span id="cart-count">0</span>)</a></li>
+          <li><a href="admin.html" class="nav-link">Admin</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section>
+      <h3>Checkout</h3>
+      <div id="checkout-area">
+        <!-- Ringkasan keranjang & form checkout di-render oleh script.js -->
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; <span id="year"></span> Nasa Skincare</p>
+    </div>
+  </footer>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
